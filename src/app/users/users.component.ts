@@ -27,7 +27,8 @@ export class UsersComponent implements OnInit {
   }
 
   onSelectUser(user: User){
-     this.updateUser.emit(user);
+     const userCopy = Object.assign({},user);
+     this.updateUser.emit(userCopy);
   }
 
   
