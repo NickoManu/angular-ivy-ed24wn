@@ -6,16 +6,19 @@ export class UserService{
 
   users: User[] = [
     {
+      id: 1,
       nome: "Luca",
       cognome: "Rossi"
     },
 
     {
+      id: 2,
       nome: "Mario",
       cognome: "Rossi"
     },
 
     {
+      id: 3,
       nome: "Lucia",
       cognome: "Rossi"
     }
