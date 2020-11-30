@@ -10,6 +10,7 @@ import { UserService } from "../users/user.service";
 export class UserComponent implements OnInit {
   @Input("user-data") user : User;
   @Output('onDeleteUser') userDeleted = new EventEmitter();
+  @Output() onSelectUser = new EventEmitter();
 
   constructor(private userService: UserService) {}
 
@@ -18,6 +19,10 @@ export class UserComponent implements OnInit {
   deleteUser(user){
     this.userDeleted.emit(this.user);    
    // this.userService.deleteUser(this.user);
+  }
+
+  updateUser(){
+    this.onSelectUser.emit(this.user);
   }
 
 }
