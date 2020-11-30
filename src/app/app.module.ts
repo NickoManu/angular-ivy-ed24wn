@@ -9,11 +9,12 @@ import { UsersComponent } from "./users/users.component";
 
 import { UserComponent } from './user/user.component';
 import { UserService } from "./users/user.service";
+import { UserDetailComponent } from './user-detail/user-detail.component';
 
 
 @NgModule({
   imports: [BrowserModule, FormsModule],
-  declarations: [AppComponent, HelloComponent, UsersComponent, UserComponent],
+  declarations: [AppComponent, HelloComponent, UsersComponent, UserComponent, UserDetailComponent],
   bootstrap: [AppComponent],
   providers: [UserService]
 })
